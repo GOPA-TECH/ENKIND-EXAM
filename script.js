@@ -328,7 +328,7 @@ function submitExam(reason = "manual") {
     name: getElement("studentName")?.value.trim() || "",
     studentClass: getElement("studentClass")?.value.trim() || "",
     subject: getElement("subject")?.value.trim() || "Coding",
-    score: `${score}/${total}`,
+    score: `${score * 2}/${total * 2}`,
     percentage
   };
 
